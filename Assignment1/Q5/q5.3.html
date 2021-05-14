@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spread operator</title>
+    </head>
+    <body>
+        <div>go to console</div>
+        <script>
+            function printCapitalNames(a,b,c,d,e)
+            {
+                for( i in arguments)
+                    console.log(arguments[i].toUpperCase());
+            }
+
+            var array=['Sam','gilbert','rocky','ben','jimmy'];
+            printCapitalNames(...array);
+        </script>
+    </body>
+</html>

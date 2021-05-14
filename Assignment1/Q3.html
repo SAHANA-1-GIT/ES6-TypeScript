@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>question3</title>
+    </head>
+    <body>
+        <div>output can be seen in console</div>
+        <script>
+            var Order={
+                id:1,
+                title:'ihpones',
+                Price: 30000,
+                printOrder(){
+                    return {id:this.id,title:this.title,Price:this.Price};
+                },
+                getPrice(){
+                    return this.Price;
+                }
+            };
+            var target={};
+            Object.assign(target,Order);
+            console.log(target);
+        </script>
+    </body>
+</html>

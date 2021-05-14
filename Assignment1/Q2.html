@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Scoping</title></head>
+    <body>
+        <div>cannot be accessed</div>
+        <script>
+            function scoping()
+            {
+                var value=25;
+                if(value==25)
+                {
+                    let num=500;
+                }
+                return num;   // not defined error: let has block level scope
+            }
+            scoping();
+        </script>
+    </body>
+</html>
